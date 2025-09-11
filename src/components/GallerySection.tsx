@@ -3,72 +3,12 @@
 import React, { useState, useCallback } from 'react';
 import { Badge } from '@/components/ui/Badge';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { getAllGalleryImages } from '@/utils/galleryImages';
 
 const GallerySection: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  const images = [
-    {
-      src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Trail runner en sendero de montaña',
-      category: 'Trail Running'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Grupo de corredores en trail',
-      category: 'Grupo'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Sendero de montaña al amanecer',
-      category: 'Paisaje'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1602245986256-bb9d7703b4b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Runner corriendo por bosque',
-      category: 'Naturaleza'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Vista panorámica desde sendero',
-      category: 'Vista'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Corredores en descanso con vista montañosa',
-      category: 'Descanso'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1486311820292-484c42063f89?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Sendero rocoso de montaña',
-      category: 'Terreno'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1418065460487-3956c3aa1889?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Corredor en cima de montaña',
-      category: 'Cima'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Equipo de trail running',
-      category: 'Equipo'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1464822759844-d150baec93d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Atardecer en sendero de montaña',
-      category: 'Atardecer'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Corredor saltando rocas en trail',
-      category: 'Técnica'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1586994511230-f74f3c264022?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Grupo celebrando en la cima',
-      category: 'Celebración'
-    }
-  ];
+  const images = getAllGalleryImages();
 
   const openLightbox = useCallback((index: number) => {
     setSelectedImage(index);

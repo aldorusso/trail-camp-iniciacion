@@ -22,7 +22,7 @@ const programs = [
       'Sesión práctica: orientación y seguridad',
       'Cena compartida'
     ],
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/gallery/IMG_20240807_153856_279.jpg',
     badge: 'Bienvenida',
     badgeVariant: 'primary' as const
   },
@@ -41,7 +41,7 @@ const programs = [
       'Cierre en grupo',
       'Plan personal de próximos pasos'
     ],
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/gallery/IMG-20220927-WA0074.jpg',
     badge: 'Cierre',
     badgeVariant: 'success' as const
   },
@@ -60,7 +60,7 @@ const programs = [
       'Material de apoyo y tracks GPS',
       'Fotos y recuerdo del fin de semana'
     ],
-    image: 'https://images.unsplash.com/photo-1602245986256-bb9d7703b4b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/gallery/liqenstudio_0124_0052_vda2023_06_07_f644056737.jpeg',
     badge: '¡Todo Incluido!',
     badgeVariant: 'warning' as const
   }
