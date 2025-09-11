@@ -126,8 +126,8 @@ const InstructorSection: React.FC = () => {
                   en esa transición de forma segura, divertida y sin presión.
                 </p>
                 <p>
-                  <em>"Mi objetivo no es que corras más rápido, sino que disfrutes cada 
-                  paso y ganes la confianza para explorar la montaña por ti mismo."</em>
+                  <em>&ldquo;Mi objetivo no es que corras más rápido, sino que disfrutes cada 
+                  paso y ganes la confianza para explorar la montaña por ti mismo.&rdquo;</em>
                 </p>
               </div>
             </div>
@@ -192,7 +192,7 @@ const InstructorSection: React.FC = () => {
                 
                 {/* Quote */}
                 <p className="text-gray-700 italic mb-4 leading-relaxed">
-                  "{testimonial.text}"
+                  &ldquo;{testimonial.text}&rdquo;
                 </p>
                 
                 {/* Author */}

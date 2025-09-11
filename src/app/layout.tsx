@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Trail Camp Iniciación - Del Asfalto a la Montaña",
   description: "Un fin de semana en la naturaleza para descubrir el trail running de forma segura, guiada y en grupo. Tu primer paso hacia el trail.",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
+
+export const viewport = "width=device-width, initial-scale=1, maximum-scale=1";
 
 export default function RootLayout({
   children,

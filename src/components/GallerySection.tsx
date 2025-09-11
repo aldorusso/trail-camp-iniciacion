@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { Badge } from '@/components/ui/Badge';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -70,17 +70,17 @@ const GallerySection: React.FC = () => {
     }
   ];
 
-  const openLightbox = (index: number) => {
+  const openLightbox = useCallback((index: number) => {
     setSelectedImage(index);
     document.body.style.overflow = 'hidden';
-  };
+  }, []);
 
-  const closeLightbox = () => {
+  const closeLightbox = useCallback(() => {
     setSelectedImage(null);
     document.body.style.overflow = 'unset';
-  };
+  }, []);
 
-  const navigateImage = (direction: 'prev' | 'next') => {
+  const navigateImage = useCallback((direction: 'prev' | 'next') => {
     if (selectedImage === null) return;
     
     if (direction === 'prev') {
@@ -88,7 +88,7 @@ const GallerySection: React.FC = () => {
     } else {
       setSelectedImage(selectedImage === images.length - 1 ? 0 : selectedImage + 1);
     }
-  };
+  }, [selectedImage, images.length]);
 
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -101,7 +101,7 @@ const GallerySection: React.FC = () => {
 
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [selectedImage]);
+  }, [selectedImage, navigateImage, closeLightbox]);
 
   return (
     <>

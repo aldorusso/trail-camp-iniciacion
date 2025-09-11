@@ -47,8 +47,8 @@ const TargetSection: React.FC = () => {
               Tienes Curiosidad
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Alguna vez has pensado: <em>"Me encantaría probar montaña, 
-              pero no sé si estaré preparado"</em>. ¡Aquí está tu respuesta!
+              Alguna vez has pensado: <em>&ldquo;Me encantaría probar montaña, 
+              pero no sé si estaré preparado&rdquo;</em>. ¡Aquí está tu respuesta!
             </p>
           </div>
 
