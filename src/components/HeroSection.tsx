@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
         <div className="animate-fade-up">
           {/* Badge Superior */}
           <Badge variant="primary" size="lg" className="mb-6">
-            Trail Camp Iniciación
+            I Trail Camp Iniciación
           </Badge>
 
           {/* Título Principal */}
@@ -33,23 +33,30 @@ const HeroSection: React.FC = () => {
           </h1>
 
           {/* Subtítulo */}
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto font-nike leading-relaxed px-4">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-4 max-w-4xl mx-auto font-nike leading-relaxed px-4">
             Un fin de semana en la naturaleza para descubrir el trail running de forma segura, guiada y en grupo. Sin presión, sin competir. Solo aprender, disfrutar y dar tu primer paso.
+          </p>
+
+          {/* Texto descriptivo */}
+          <p className="text-base sm:text-lg text-gray-300 mb-8 max-w-5xl mx-auto leading-relaxed px-4">
+            En un mundo que corre sin aliento, donde el ruido digital nos consume, el asfalto te da kilómetros, pero te roba paisajes. Y en el fondo, sientes que algo falta.
+            <br /><br />
+            Este campamento es para ti: una puerta de entrada a la montaña, un refugio donde la velocidad no importa y donde el único objetivo es reconectar contigo. Con solo 20 plazas disponibles para garantizar una atención exclusiva y la máxima seguridad, este no es un curso, es el primer capítulo de tu nueva aventura, ¿te atreves?.
           </p>
 
           {/* Estadísticas */}
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mb-12 text-white px-4">
             <div className="text-center min-w-[100px]">
-              <div className="text-2xl sm:text-3xl font-bold text-primary-500">10</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary-500">20</div>
               <div className="text-xs sm:text-sm uppercase tracking-wide">Plazas Disponibles</div>
             </div>
             <div className="text-center min-w-[100px]">
-              <div className="text-2xl sm:text-3xl font-bold text-primary-500">2</div>
-              <div className="text-xs sm:text-sm uppercase tracking-wide">Días</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary-500">3</div>
+              <div className="text-xs sm:text-sm uppercase tracking-wide">Días de pura experiencia</div>
             </div>
             <div className="text-center min-w-[100px]">
               <div className="text-2xl sm:text-3xl font-bold text-primary-500">100%</div>
-              <div className="text-xs sm:text-sm uppercase tracking-wide">Seguro</div>
+              <div className="text-xs sm:text-sm uppercase tracking-wide">Seguridad y Guía Profesional</div>
             </div>
           </div>
 

@@ -12,14 +12,11 @@ const FinalCTASection: React.FC = () => {
           <Heart className="h-16 w-16 text-primary-500 mx-auto mb-8 animate-pulse" />
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-nike px-4">
-            ¿LISTO PARA <span className="text-primary-500">DAR EL PASO?</span>
+            ¡Listo para <span className="text-primary-500">dar el paso</span>?
           </h2>
           
-          <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-4 leading-relaxed px-4">
-            Solo <strong className="text-primary-500">10 plazas disponibles</strong> para garantizar 
-          </p>
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-12 leading-relaxed px-4">
-            atención personalizada y máxima seguridad en el grupo.
+            No dejes que las plazas se agoten. El asfalto siempre estará ahí. La montaña, y esta oportunidad, no.
           </p>
           
           {/* Key Benefits */}
@@ -27,7 +24,7 @@ const FinalCTASection: React.FC = () => {
             <div className="text-center">
               <Users className="h-12 w-12 text-primary-500 mx-auto mb-4" />
               <h3 className="text-lg font-bold mb-2">Grupo Reducido</h3>
-              <p className="text-gray-400">Máximo 10 personas</p>
+              <p className="text-gray-400">Máximo 20 personas</p>
             </div>
             <div className="text-center">
               <MapPin className="h-12 w-12 text-primary-500 mx-auto mb-4" />
@@ -60,7 +57,7 @@ const FinalCTASection: React.FC = () => {
           <div className="mt-12 inline-flex items-center space-x-3 bg-slate-700 rounded-full px-6 py-3">
             <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
             <span className="text-sm text-gray-300">
-              <strong className="text-white">Solo quedan pocas plazas</strong> - No te quedes fuera
+              <strong className="text-white">Solo quedan pocas plazas</strong> - ¡No te quedes fuera!
             </span>
           </div>
         </div>

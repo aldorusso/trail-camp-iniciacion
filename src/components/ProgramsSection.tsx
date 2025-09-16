@@ -1,68 +1,45 @@
 'use client';
 
 import React from 'react';
-import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
-import { Clock, Users, MapPin, Star, TrendingUp, Heart } from 'lucide-react';
+import { Clock, Users, MapPin, Star, TrendingUp, Heart, Coffee, Mountain } from 'lucide-react';
 
-const programs = [
+const programSchedule = [
   {
-    id: 1,
-    title: 'Sábado',
-    description: 'Primer día del Trail Camp con bienvenida, ruta guiada y sesiones prácticas',
-    duration: 'Día completo',
-    level: 'Iniciación',
-    participants: '10 máx',
-    price: 'DÍA 1',
-    features: [
-      'Bienvenida + charla: "Del asfalto al trail"',
-      'Ruta guiada 10-15 km con paradas técnicas',
-      'Almuerzo en grupo en plena naturaleza',
-      'Sesión práctica: orientación y seguridad',
-      'Cena compartida'
-    ],
-    image: '/gallery/IMG_20240807_153856_279.jpg',
-    badge: 'Bienvenida',
-    badgeVariant: 'primary' as const
+    day: 'VIERNES',
+    subtitle: 'Llegada y bienvenida',
+    activities: [
+      { time: '17:00 h', activity: 'Recepción y check-in', description: 'Café de bienvenida.' },
+      { time: '18:00 h', activity: 'Presentación del camp', description: 'Introducción a la filosofía Desconecta EcoTrail, a la ruta y a la agenda del fin de semana.' },
+      { time: '19:30 h', activity: 'Taller: "Del asfalto al sendero"', description: 'Sesión de dudas y consejos prácticos para iniciarse en el trail: material, técnica y mentalidad.' },
+      { time: '21:00 h', activity: 'Cena comunitaria', description: 'Momento para conectar con la tribu.' },
+      { time: '22:30 h', activity: 'Proyección & debate', description: 'Proyección de un documental inspirador.' }
+    ]
   },
   {
-    id: 2,
-    title: 'Domingo',
-    description: 'Segundo día con práctica de técnicas y cierre motivacional del programa',
-    duration: 'Mañana',
-    level: 'Práctica',
-    participants: '10 máx',
-    price: 'DÍA 2',
-    features: [
-      'Ruta corta 8-10 km con práctica de ritmo',
-      'Técnicas de bajadas seguras',
-      'Dinámica de mentalidad y miedos',
-      'Cierre en grupo',
-      'Plan personal de próximos pasos'
-    ],
-    image: '/gallery/IMG-20220927-WA0074.jpg',
-    badge: 'Cierre',
-    badgeVariant: 'success' as const
+    day: 'SÁBADO',
+    subtitle: 'Día de entrenamiento y acción',
+    activities: [
+      { time: '08:00 h', activity: 'Desayuno del corredor', description: 'Un desayuno energético y consciente en la casa rural.' },
+      { time: '09:00 h', activity: 'Plogging: calentamiento con propósito', description: 'Salida para calentar, con una breve sesión de plogging en una zona cercana.' },
+      { time: '09:30 h', activity: 'Ruta guiada', description: 'Recorrido de 15-20 km (adaptado a 2 niveles) por rutas emblemáticas de la zona, con paradas técnicas para realizar ejercicios de técnica.' },
+      { time: '14:00 h', activity: 'Comida y recuperación', description: 'Comida picnic en un punto emblemático de la ruta.' },
+      { time: '16:00 h', activity: 'Taller práctico', description: 'Sesión sobre seguridad en montaña, orientación con mapa y gestión de residuos.' },
+      { time: '18:00 h', activity: 'Salida nocturna', description: 'Disfrute de la experiencia con frontal.' },
+      { time: '21:00 h', activity: 'Cena y convivencia', description: 'Barbacoa o cena local. Espacio para compartir experiencias.' }
+    ]
   },
   {
-    id: 3,
-    title: 'Qué Incluye',
-    description: 'Todo lo que está incluido en tu Trail Camp de iniciación completo',
-    duration: '2 días',
-    level: 'Completo',
-    participants: 'Todo',
-    price: 'INCLUIDO',
-    features: [
-      '2 rutas guiadas con seguro RC y accidentes',
-      'Grupo reducido con atención personalizada',
-      'Plan previo de entrenamiento (2 semanas)',
-      'Material de apoyo y tracks GPS',
-      'Fotos y recuerdo del fin de semana'
-    ],
-    image: '/gallery/liqenstudio_0124_0052_vda2023_06_07_f644056737.jpeg',
-    badge: '¡Todo Incluido!',
-    badgeVariant: 'warning' as const
+    day: 'DOMINGO',
+    subtitle: 'Mañana de flow y despedida',
+    activities: [
+      { time: '08:00 h', activity: 'Desayuno y stretching', description: 'Sesión de estiramientos conscientes para recuperar los músculos.' },
+      { time: '09:00 h', activity: 'Ruta de "Flow"', description: 'Última salida de 8-10 km por un sendero suave y fluido. Momento para disfrutar del trail sin presión.' },
+      { time: '13:00 h', activity: 'Ceremonia final', description: 'Entrega de un certificado simbólico, bolsa del corredor y foto de grupo.' },
+      { time: '14:00 h', activity: 'Comida y cierre', description: 'Comida de despedida y sesión de feedback.' },
+      { time: '17:00 h', activity: 'Salida del camp', description: '' }
+    ]
   }
 ];
 
@@ -76,84 +53,60 @@ const ProgramsSection: React.FC = () => {
             Programa del Fin de Semana
           </Badge>
           <h2 className="text-display-3 font-nike text-dark-950 mb-6">
-            TU <span className="text-primary-500">PRIMER TRAIL CAMP</span>
+            El Programa: <span className="text-primary-500">3 días para un nuevo comienzo</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            No es un curso, no es una carrera: es tu <strong>primer paso real</strong> hacia el trail. 
-            Diseñado para que aprendas, disfrutes y ganes confianza.
+            No es un curso, no es una carrera. Es tu <strong>primer paso real</strong> hacia el trail running.
           </p>
+          <div className="mt-8">
+            <Badge variant="success" size="lg">
+              LA EXPERIENCIA PASO A PASO
+            </Badge>
+          </div>
         </div>
 
-        {/* Programs Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {programs.map((program) => (
-            <Card key={program.id} className="h-full">
-              {/* Image */}
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={program.image}
-                  alt={program.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                />
-                <div className="absolute top-4 left-4">
-                  <Badge variant={program.badgeVariant} size="md">
-                    {program.badge}
-                  </Badge>
-                </div>
-                <div className="absolute top-4 right-4 bg-white bg-opacity-90 rounded-full p-2">
-                  <Star className="h-5 w-5 text-primary-500 fill-current" />
-                </div>
+        {/* Program Schedule */}
+        <div className="space-y-12 mb-16">
+          {programSchedule.map((dayProgram, dayIndex) => (
+            <div key={dayIndex} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              {/* Day Header */}
+              <div className="text-center mb-8">
+                <h3 className="text-3xl font-bold text-dark-950 font-nike mb-2">
+                  {dayProgram.day}
+                </h3>
+                <p className="text-lg text-primary-500 font-semibold">
+                  {dayProgram.subtitle}
+                </p>
               </div>
 
-              <CardHeader>
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-2xl font-bold text-dark-950 font-nike">
-                    {program.title}
-                  </h3>
-                  <div className="text-2xl font-bold text-primary-500">
-                    {program.price}
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-4">{program.description}</p>
-                
-                {/* Stats */}
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div className="flex items-center text-gray-500">
-                    <Clock className="h-4 w-4 mr-2" />
-                    {program.duration}
-                  </div>
-                  <div className="flex items-center text-gray-500">
-                    <Users className="h-4 w-4 mr-2" />
-                    {program.participants} personas
-                  </div>
-                  <div className="flex items-center text-gray-500 col-span-2">
-                    <TrendingUp className="h-4 w-4 mr-2" />
-                    Nivel {program.level}
-                  </div>
-                </div>
-              </CardHeader>
-
-              <CardContent>
-                <ul className="space-y-2">
-                  {program.features.map((feature, index) => (
-                    <li key={index} className="flex items-start text-sm text-gray-600">
-                      <div className="h-1.5 w-1.5 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-
-              <CardFooter>
-                <Button 
-                  variant="primary" 
-                  size="md" 
-                  className="w-full"
-                >
-                  Inscribirse Ahora
-                </Button>
-              </CardFooter>
-            </Card>
+              {/* Schedule Table */}
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b border-gray-200">
+                      <th className="text-left py-3 px-4 font-semibold text-gray-700 w-24">Hora</th>
+                      <th className="text-left py-3 px-4 font-semibold text-gray-700">Actividad</th>
+                      <th className="text-left py-3 px-4 font-semibold text-gray-700">Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {dayProgram.activities.map((activity, activityIndex) => (
+                      <tr key={activityIndex} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                        <td className="py-4 px-4 font-semibold text-primary-500">
+                          {activity.time}
+                        </td>
+                        <td className="py-4 px-4 font-semibold text-dark-950">
+                          {activity.activity}
+                        </td>
+                        <td className="py-4 px-4 text-gray-600">
+                          {activity.description}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
           ))}
         </div>
 
@@ -165,12 +118,12 @@ const ProgramsSection: React.FC = () => {
               ¿LISTO PARA DAR EL PASO?
             </h3>
             <p className="text-xl text-gray-300 mb-8">
-              Solo <strong className="text-primary-500">10 plazas disponibles</strong> para garantizar 
+              Solo <strong className="text-primary-500">20 plazas disponibles</strong> para garantizar 
               atención personalizada y máxima seguridad en el grupo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" size="lg">
-                Reservar Plaza Ahora
+                Inscribirse Ahora
               </Button>
               <Button variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-dark-950">
                 <MapPin className="mr-2 h-5 w-5" />

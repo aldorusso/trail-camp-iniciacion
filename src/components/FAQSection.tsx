@@ -10,43 +10,33 @@ const FAQSection: React.FC = () => {
   const faqs = [
     {
       question: '¿Necesito experiencia en trail?',
-      answer: 'No. Solo estar acostumbrado a correr 8-10 km en asfalto. El Trail Camp está diseñado específicamente para corredores populares que quieren iniciarse en montaña de forma segura.',
+      answer: 'No, este campamento está diseñado para principiantes.',
       category: 'Nivel'
     },
     {
       question: '¿Y si no conozco a nadie?',
-      answer: 'Genial, aquí todos vienen igual. El ambiente es súper acogedor y la experiencia compartida crea vínculos increíbles. Saldrás con nuevos amigos de trail.',
+      answer: 'El grupo reducido y el "buen rollo" de la comunidad harán que te sientas como en casa desde el primer momento.',
       category: 'Social'
     },
     {
-      question: '¿Y si me lesiono o hace mal tiempo?',
-      answer: 'Tenemos seguro de accidentes incluido y plan B por meteorología. La seguridad es nuestra prioridad número uno, siempre hay alternativas preparadas.',
+      question: '¿Qué pasa si me lesiono o hace mal tiempo?',
+      answer: 'Tendremos un seguro de accidentes y un plan B para la ruta si el tiempo no acompaña.',
       category: 'Seguridad'
     },
     {
       question: '¿Tengo que llevar mucho material?',
-      answer: 'Te enviaremos una lista sencilla con lo imprescindible. La mayoría son cosas que ya tienes: zapatillas de trail (o running), mochila pequeña, ropa cómoda y ganas de disfrutar.',
+      answer: 'Te enviaremos una lista con lo esencial. Nada de equipo caro.',
       category: 'Material'
     },
     {
       question: '¿Qué nivel físico necesito?',
-      answer: 'Si corres regularmente 8-10 km en asfalto, tienes la base perfecta. No necesitas ser súper rápido, solo estar acostumbrado al ejercicio cardiovascular.',
+      answer: 'Solo necesitas estar en forma básica y tener ganas de aprender. Si corres regularmente, estás listo.',
       category: 'Nivel'
     },
     {
-      question: '¿Puedo cancelar mi plaza?',
-      answer: 'Sí, hasta 15 días antes del evento con devolución completa. Entre 7-15 días, devolución del 50%. Menos de 7 días, no hay devolución (salvo causa médica justificada).',
+      question: '¿Cuál es la política de cancelación?',
+      answer: 'Reserva con solo 50€. El resto se paga al llegar al evento. Puedes cancelar hasta 15 días antes con devolución del 100%.',
       category: 'Reserva'
-    },
-    {
-      question: '¿Qué incluye exactamente el precio?',
-      answer: 'Todo: rutas guiadas, seguro, material de apoyo, plan de entrenamiento previo, fotos del evento. La opción completa incluye además alojamiento y todas las comidas.',
-      category: 'Precio'
-    },
-    {
-      question: '¿Hay límite de edad?',
-      answer: 'El Trail Camp está pensado para adultos. Edad mínima 18 años, máxima no hay. Solo necesitas estar en forma básica y tener ganas de aprender.',
-      category: 'Edad'
     }
   ];
 

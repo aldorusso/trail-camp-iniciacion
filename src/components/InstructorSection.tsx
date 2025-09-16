@@ -216,7 +216,7 @@ const InstructorSection: React.FC = () => {
           <div className="inline-flex items-center justify-center space-x-4 bg-white rounded-full px-8 py-4 shadow-lg">
             <div className="w-3 h-3 bg-primary-500 rounded-full animate-pulse"></div>
             <p className="text-dark-950 font-nike font-semibold">
-              Con Óscar, tu primer trail será memorable
+              Con Óscar, tu primer trail será una experiencia inolvidable y segura
             </p>
             <div className="w-3 h-3 bg-slate-800 rounded-full animate-pulse"></div>
           </div>

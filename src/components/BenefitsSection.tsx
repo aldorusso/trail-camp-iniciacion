@@ -9,31 +9,31 @@ const BenefitsSection: React.FC = () => {
     {
       icon: Shield,
       title: 'Confianza',
-      description: 'Perder el miedo a los desniveles y a la montaña.',
+      description: 'De la duda a la certeza. Perderás el miedo a los desniveles y al terreno irregular. Te sentirás seguro en subidas y bajadas, sabiendo que tu cuerpo está preparado para el desafío.',
       color: 'bg-primary-500'
     },
     {
       icon: Zap,
       title: 'Técnica',
-      description: 'Aprender lo básico en subidas, bajadas y ritmo en senderos.',
+      description: 'Corre con inteligencia. Aprenderás las técnicas básicas para ascender de forma eficiente (caminar con bastones) y, lo que es más importante, para descender con fluidez y sin riesgo de lesión.',
       color: 'bg-trail-500'
     },
     {
       icon: Compass,
       title: 'Seguridad',
-      description: 'Material, orientación y hábitos para no sentirte perdido.',
+      description: 'Tu escudo en la montaña. Conocerás el material esencial, las claves de la orientación con GPS y los hábitos básicos para que cada salida sea una aventura sin riesgos.',
       color: 'bg-dark-950'
     },
     {
       icon: Users,
       title: 'Tribu',
-      description: 'Correr acompañado, sentir que no estás solo en el cambio.',
+      description: 'No corres solo, corres acompañado. Te unirás a un grupo reducido de personas que comparten tu misma pasión y tus mismos miedos. Un chat, quedadas y aventuras futuras.',
       color: 'bg-primary-500'
     },
     {
       icon: TrendingUp,
       title: 'Motivación',
-      description: 'Volver a casa con ganas de seguir explorando la montaña.',
+      description: 'Un propósito que te impulsa. Volverás a casa con la energía de la montaña en el alma, con ganas de seguir explorando y de convertir el trail en tu nueva forma de vida.',
       color: 'bg-trail-500'
     }
   ];
@@ -49,8 +49,8 @@ const BenefitsSection: React.FC = () => {
           <h2 className="text-display-3 font-nike text-dark-950 mb-6">
             TU <span className="text-primary-500">TRANSFORMACIÓN</span> GARANTIZADA
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Al terminar el Trail Camp, habrás ganado todo lo que necesitas para empezar tu aventura en montaña
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+            Al terminar este fin de semana, habrás ganado todo lo que necesitas para empezar tu nueva aventura por la montaña, no solo serás un corredor de montaña, sino que tendrás la confianza, con una nueva mentalidad y la autonomía, con las herramientas necesarias para explorar por ti mismo este maravilloso mundo del trail running.
           </p>
         </div>
 
@@ -77,11 +77,11 @@ const BenefitsSection: React.FC = () => {
           <div className="md:col-span-2 lg:col-span-3 bg-slate-800 rounded-2xl p-8 md:p-12 text-center text-white">
             <div className="max-w-3xl mx-auto">
               <h3 className="text-3xl lg:text-4xl font-bold mb-6 font-nike">
-                NO ES UN CURSO, NO ES UNA CARRERA
+                NO ES UN CURSO. NO ES UNA CARRERA.
               </h3>
               <p className="text-xl lg:text-2xl leading-relaxed opacity-95">
                 Es tu <span className="font-bold">primer paso real</span> hacia el trail running. 
-                Diseñado para que aprendas sin presión y disfrutes del proceso.
+                Es el sendero que te está esperando para cambiarte.
               </p>
               
               {/* Decorative dots */}
@@ -103,7 +103,7 @@ const BenefitsSection: React.FC = () => {
           <div className="inline-flex items-center justify-center space-x-4 bg-dark-950 rounded-full px-8 py-4">
             <div className="w-3 h-3 bg-primary-500 rounded-full animate-pulse"></div>
             <p className="text-white font-nike font-semibold text-lg">
-              Tu primer paso hacia el trail te espera
+              No es un curso. No es una carrera. Es tu primer paso real hacia el trail running.
             </p>
             <div className="w-3 h-3 bg-trail-500 rounded-full animate-pulse"></div>
           </div>

@@ -53,11 +53,10 @@ const GallerySection: React.FC = () => {
               Galería
             </Badge>
             <h2 className="text-display-3 font-nike text-dark-950 mb-6">
-              EXPERIENCIA <span className="text-primary-500">TRAIL</span>
+              La experiencia <span className="text-primary-500">TRAIL</span> que te está esperando
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Descubre la belleza del trail running a través de imágenes que capturan 
-              la esencia de correr en la naturaleza
+              Descubre la belleza y la emoción de correr donde el paisaje es tu única recompensa.
             </p>
           </div>
 
@@ -96,7 +95,7 @@ const GallerySection: React.FC = () => {
             <div className="inline-flex items-center space-x-4 bg-white rounded-full px-8 py-4 shadow-lg">
               <div className="w-3 h-3 bg-primary-500 rounded-full animate-pulse"></div>
               <p className="text-dark-950 font-nike font-semibold">
-                Estas serán tus vistas durante el Trail Camp
+                Estas serán tus vistas durante el Trail Camp. Y esta será tu tribu.
               </p>
               <div className="w-3 h-3 bg-slate-800 rounded-full animate-pulse"></div>
             </div>

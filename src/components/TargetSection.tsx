@@ -14,56 +14,45 @@ const TargetSection: React.FC = () => {
             Para Quién Es
           </Badge>
           <h2 className="text-display-3 font-nike text-dark-950 mb-6">
-            SI ERES <span className="text-primary-500">CORREDOR</span> POPULAR
+            ¿Este campamento es para mí? Si eres <span className="text-primary-500">CORREDOR</span> POPULAR
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Este Trail Camp está diseñado específicamente para ti
+            este trail camp está diseñado específicamente para ti.
           </p>
         </div>
 
-        {/* Target Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        {/* Nuevo contenido de la sección */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-dark-950 mb-8 text-center font-nike">
+            Si corres en asfalto, y alguna vez has pensado…
+          </h3>
           
-          {/* Card 1 - Corredor Asfalto */}
-          <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-            <div className="bg-primary-500 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-              <Users className="h-8 w-8 text-white" />
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Primera situación */}
+            <div className="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+              <div className="bg-primary-500 rounded-full p-4 w-16 h-16 mb-6 flex items-center justify-center">
+                <Mountain className="h-8 w-8 text-white" />
+              </div>
+              <h4 className="text-lg font-bold text-dark-950 mb-4 font-nike">
+                "Me encantaría probar montaña, pero me da miedo no estar preparado."
+              </h4>
+              <p className="text-gray-600 leading-relaxed">
+                Si corres 5K, 10K, media maratón o un maratón completo, tienes una base cardiovascular sólida, y eso es todo lo que necesitas para empezar. La montaña no pide élites, pide respeto. Te guiaremos paso a paso en senderos accesibles, adaptados a tu ritmo, para que pierdas el miedo a los desniveles.
+              </p>
             </div>
-            <h3 className="text-xl font-bold text-dark-950 mb-4 font-nike">
-              Corres en Asfalto
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Si corres <strong>5K, 10K, media, maratón</strong> y tienes la base cardiovascular, 
-              estás perfecto para dar el salto a montaña.
-            </p>
-          </div>
 
-          {/* Card 2 - Curiosidad */}
-          <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-            <div className="bg-trail-500 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-              <Mountain className="h-8 w-8 text-white" />
+            {/* Segunda situación */}
+            <div className="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+              <div className="bg-trail-500 rounded-full p-4 w-16 h-16 mb-6 flex items-center justify-center">
+                <Heart className="h-8 w-8 text-white" />
+              </div>
+              <h4 className="text-lg font-bold text-dark-950 mb-4 font-nike">
+                "Quiero correr lejos del tráfico, pero me da pánico perderme o lesionarme."
+              </h4>
+              <p className="text-gray-600 leading-relaxed">
+                Has soñado con el silencio del bosque y la inmensidad de las cumbres. Nosotros te damos la seguridad para hacerlo realidad. Un grupo reducido, un guía experto y un programa diseñado para que ganes confianza en cada pisada. Te daremos las herramientas para orientarte, saber qué material usar y anticiparte a los imprevistos.
+              </p>
             </div>
-            <h3 className="text-xl font-bold text-dark-950 mb-4 font-nike">
-              Tienes Curiosidad
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Alguna vez has pensado: <em>&ldquo;Me encantaría probar montaña, 
-              pero no sé si estaré preparado&rdquo;</em>. ¡Aquí está tu respuesta!
-            </p>
-          </div>
-
-          {/* Card 3 - Miedos Naturales */}
-          <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 md:col-span-2 lg:col-span-1">
-            <div className="bg-dark-950 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-              <Heart className="h-8 w-8 text-white" />
-            </div>
-            <h3 className="text-xl font-bold text-dark-950 mb-4 font-nike">
-              Buscas Seguridad
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Quieres correr lejos del tráfico y sentir la naturaleza, 
-              pero te da miedo <strong>perderte, lesionarte o no aguantar</strong>.
-            </p>
           </div>
         </div>
 
@@ -72,13 +61,13 @@ const TargetSection: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <CheckCircle className="h-16 w-16 text-primary-500 mx-auto mb-8" />
             
-            <h3 className="text-3xl lg:text-4xl font-bold mb-6 font-nike">
-              ESTE TRAIL CAMP ESTÁ DISEÑADO PARA TI
+            <h3 className="text-2xl lg:text-3xl font-bold mb-6 font-nike">
+              No dejes que el miedo te impida descubrir un nuevo mundo
             </h3>
             
             <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed">
-              Para <span className="text-primary-500 font-semibold">corredores populares</span> que quieren 
-              iniciarse en el trail con <span className="text-primary-500 font-semibold">seguridad y confianza</span>.
+              Este Trail Camp está diseñado para <span className="text-primary-500 font-semibold">corredores populares</span> que quieren 
+              iniciarse en el trail con <span className="text-primary-500 font-semibold">seguridad, confianza y en la mejor compañía</span>.
             </p>
             
             {/* Decorative Elements */}
