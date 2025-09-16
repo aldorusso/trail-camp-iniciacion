@@ -4,7 +4,7 @@ import React from 'react';
 import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
-import { Check, Star, Zap, Heart, Clock, Users, TrendingUp } from 'lucide-react';
+import { Check, Star, Zap, Heart } from 'lucide-react';
 
 const PricingSection: React.FC = () => {
   const pricingOptions = [

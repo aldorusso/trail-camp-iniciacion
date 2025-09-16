@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Badge } from '@/components/ui/Badge';
-import { CheckCircle, Users, Mountain, Heart } from 'lucide-react';
+import { CheckCircle, Mountain, Heart } from 'lucide-react';
 
 const TargetSection: React.FC = () => {
   return (
@@ -34,7 +34,7 @@ const TargetSection: React.FC = () => {
                 <Mountain className="h-8 w-8 text-white" />
               </div>
               <h4 className="text-lg font-bold text-dark-950 mb-4 font-nike">
-                "Me encantaría probar montaña, pero me da miedo no estar preparado."
+                &ldquo;Me encantaría probar montaña, pero me da miedo no estar preparado.&rdquo;
               </h4>
               <p className="text-gray-600 leading-relaxed">
                 Si corres 5K, 10K, media maratón o un maratón completo, tienes una base cardiovascular sólida, y eso es todo lo que necesitas para empezar. La montaña no pide élites, pide respeto. Te guiaremos paso a paso en senderos accesibles, adaptados a tu ritmo, para que pierdas el miedo a los desniveles.
@@ -47,7 +47,7 @@ const TargetSection: React.FC = () => {
                 <Heart className="h-8 w-8 text-white" />
               </div>
               <h4 className="text-lg font-bold text-dark-950 mb-4 font-nike">
-                "Quiero correr lejos del tráfico, pero me da pánico perderme o lesionarme."
+                &ldquo;Quiero correr lejos del tráfico, pero me da pánico perderme o lesionarme.&rdquo;
               </h4>
               <p className="text-gray-600 leading-relaxed">
                 Has soñado con el silencio del bosque y la inmensidad de las cumbres. Nosotros te damos la seguridad para hacerlo realidad. Un grupo reducido, un guía experto y un programa diseñado para que ganes confianza en cada pisada. Te daremos las herramientas para orientarte, saber qué material usar y anticiparte a los imprevistos.

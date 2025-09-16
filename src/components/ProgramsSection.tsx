@@ -3,7 +3,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
-import { Clock, Users, MapPin, Star, TrendingUp, Heart, Coffee, Mountain } from 'lucide-react';
+import { Heart, MapPin } from 'lucide-react';
 
 const programSchedule = [
   {
