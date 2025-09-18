@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
             </div>
             <div className="text-center min-w-[100px]">
               <div className="text-2xl sm:text-3xl font-bold text-primary-500">3</div>
-              <div className="text-xs sm:text-sm uppercase tracking-wide">Días de pura experiencia</div>
+              <div className="text-xs sm:text-sm uppercase tracking-wide">Días de pura experiencia (viernes tarde a domingo)</div>
             </div>
             <div className="text-center min-w-[100px]">
               <div className="text-2xl sm:text-3xl font-bold text-primary-500">100%</div>

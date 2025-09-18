@@ -56,7 +56,7 @@ const FAQSection: React.FC = () => {
             ¿TIENES <span className="text-primary-500">DUDAS?</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Resolvemos las preguntas más comunes sobre el Trail Camp de Iniciación
+            Resolvemos las preguntas más comunes sobre el Trail Camp.
           </p>
         </div>
 
@@ -118,8 +118,7 @@ const FAQSection: React.FC = () => {
                 ¿Tienes más preguntas?
               </h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Estamos aquí para resolver cualquier duda que tengas. 
-                No dudes en contactarnos directamente.
+                Contáctanos directamente por email o WhatsApp.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 

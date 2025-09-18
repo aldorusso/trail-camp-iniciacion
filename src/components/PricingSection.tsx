@@ -10,38 +10,37 @@ const PricingSection: React.FC = () => {
   const pricingOptions = [
     {
       id: 'base',
-      title: 'Base',
-      subtitle: 'Tu primer trail perfecto',
-      price: '170',
+      title: 'Opción Esencial',
+      subtitle: '',
+      price: '80',
       currency: '€',
-      description: 'Todo lo esencial para empezar en el trail running con total seguridad',
+      description: '',
       features: [
-        'Rutas guiadas los 2 días con instructor certificado',
-        'Seguro RC y accidentes incluido',
-        'Grupo reducido máximo 10 personas',
-        'Plan de entrenamiento previo (2 semanas)',
-        'Material de apoyo y tracks GPS',
-        'Fotos y recuerdo del fin de semana'
+        '2 rutas guiadas con seguro de RC y accidentes.',
+        'Grupo reducido con atención personalizada por técnicos cualificados.',
+        'Plan de entrenamiento previo (2 semanas).',
+        'Material de apoyo y tracks GPS.',
+        'Fotos y recuerdo del fin de semana.'
       ],
       badge: 'Esencial',
       badgeVariant: 'primary' as const,
-      buttonText: 'Reservar Base',
+      buttonText: 'Reservar Esencial',
       buttonVariant: 'outline' as const,
       popular: false,
       icon: Zap
     },
     {
       id: 'experiencia-total',
-      title: 'Experiencia Total',
-      subtitle: 'La tranquilidad de tenerlo todo organizado',
+      title: 'Opción Experiencia Total',
+      subtitle: '',
       price: '215',
       currency: '€',
-      description: 'Incluye todo lo de la opción Esencial + alojamiento y pensión completa',
+      description: '',
       features: [
-        'Incluye todo lo de la opción Esencial',
-        'Alojamiento y pensión completa',
-        'Todas las comidas del fin de semana (cenas, desayunos y almuerzos)',
-        'La tranquilidad de tenerlo todo organizado'
+        'Incluye todo lo de la opción Esencial.',
+        'Alojamiento y pensión completa.',
+        'Todas las comidas del fin de semana (cenas, desayunos y almuerzos).',
+        'La tranquilidad de tenerlo todo organizado.'
       ],
       badge: 'Más Popular',
       badgeVariant: 'success' as const,
@@ -61,7 +60,7 @@ const PricingSection: React.FC = () => {
             Elige Tu Modalidad
           </Badge>
           <h2 className="text-display-3 font-nike text-dark-950 mb-6">
-            TU <span className="text-primary-500">INVERSIÓN</span> PERFECTA
+            Tu inversión en una <span className="text-primary-500">nueva pasión</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             No es solo un precio, es tu <strong>entrada al trail running</strong>. 

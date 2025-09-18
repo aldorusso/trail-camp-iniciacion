@@ -6,6 +6,7 @@ import ProgramsSection from '@/components/ProgramsSection';
 import InstructorSection from '@/components/InstructorSection';
 import PricingSection from '@/components/PricingSection';
 import FAQSection from '@/components/FAQSection';
+import CommunitySection from '@/components/CommunitySection';
 import FinalCTASection from '@/components/FinalCTASection';
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
       <InstructorSection />
       <PricingSection />
       <FAQSection />
+      <CommunitySection />
       <FinalCTASection />
     </main>
   );

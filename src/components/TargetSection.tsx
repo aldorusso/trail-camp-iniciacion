@@ -14,10 +14,10 @@ const TargetSection: React.FC = () => {
             Para Quién Es
           </Badge>
           <h2 className="text-display-3 font-nike text-dark-950 mb-6">
-            ¿Este campamento es para mí? Si eres <span className="text-primary-500">CORREDOR</span> POPULAR
+            ¿Este campamento es para mí?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            este trail camp está diseñado específicamente para ti.
+            Si eres corredor popular, este trail camp está diseñado específicamente para ti.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ const TargetSection: React.FC = () => {
                 &ldquo;Quiero correr lejos del tráfico, pero me da pánico perderme o lesionarme.&rdquo;
               </h4>
               <p className="text-gray-600 leading-relaxed">
-                Has soñado con el silencio del bosque y la inmensidad de las cumbres. Nosotros te damos la seguridad para hacerlo realidad. Un grupo reducido, un guía experto y un programa diseñado para que ganes confianza en cada pisada. Te daremos las herramientas para orientarte, saber qué material usar y anticiparte a los imprevistos.
+                Has soñado con el silencio del bosque y la inmensidad de las cumbres. Nosotros te damos la seguridad para hacerlo realidad. Un grupo reducido, guías expertos y un programa diseñado para que ganes confianza en cada pisada. Te daremos las herramientas para orientarte, saber qué material usar y anticiparte a los imprevistos.
               </p>
             </div>
           </div>

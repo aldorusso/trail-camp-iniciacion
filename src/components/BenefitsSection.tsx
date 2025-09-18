@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Badge } from '@/components/ui/Badge';
-import { Shield, Zap, Compass, Users, TrendingUp } from 'lucide-react';
+import { Shield, Zap, Compass, Users, TrendingUp, Smile } from 'lucide-react';
 
 const BenefitsSection: React.FC = () => {
   const benefits = [
@@ -35,6 +35,12 @@ const BenefitsSection: React.FC = () => {
       title: 'Motivación',
       description: 'Un propósito que te impulsa. Volverás a casa con la energía de la montaña en el alma, con ganas de seguir explorando y de convertir el trail en tu nueva forma de vida.',
       color: 'bg-trail-500'
+    },
+    {
+      icon: Smile,
+      title: 'Diversión',
+      description: 'La aventura más allá de la meta. En este campamento no solo entrenamos; nos reímos, compartimos historias y celebramos cada pequeño logro. Descubrirás que el trail es una excusa perfecta para conocer gente increíble con tu misma pasión y para crear recuerdos que durarán mucho más que una marca personal. Porque la verdadera victoria es disfrutar el camino, y lo haremos juntos.',
+      color: 'bg-dark-950'
     }
   ];
 
@@ -81,7 +87,7 @@ const BenefitsSection: React.FC = () => {
               </h3>
               <p className="text-xl lg:text-2xl leading-relaxed opacity-95">
                 Es tu <span className="font-bold">primer paso real</span> hacia el trail running. 
-                Es el sendero que te está esperando para cambiarte.
+                Es la montaña que te está esperando para cambiarte.
               </p>
               
               {/* Decorative dots */}
@@ -100,13 +106,18 @@ const BenefitsSection: React.FC = () => {
 
         {/* Bottom Message */}
         <div className="text-center">
-          <div className="inline-flex items-center justify-center space-x-4 bg-dark-950 rounded-full px-8 py-4">
+          <div className="inline-flex items-center justify-center space-x-4 bg-dark-950 rounded-full px-8 py-4 mb-8">
             <div className="w-3 h-3 bg-primary-500 rounded-full animate-pulse"></div>
             <p className="text-white font-nike font-semibold text-lg">
               No es un curso. No es una carrera. Es tu primer paso real hacia el trail running.
             </p>
             <div className="w-3 h-3 bg-trail-500 rounded-full animate-pulse"></div>
           </div>
+          
+          {/* Additional Message */}
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto italic">
+            Si alguna vez se te ha pasado por la cabeza correr por montaña, pero lo ves inaccesible o inalcanzable, te animo a venir y probar, no te arrepentirás.
+          </p>
         </div>
       </div>
     </section>

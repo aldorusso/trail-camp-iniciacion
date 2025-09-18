@@ -14,13 +14,13 @@ const InstructorSection: React.FC = () => {
     },
     {
       icon: Award,
-      title: 'Certificado',
-      description: 'Instructor oficial de montaña'
+      title: '+100',
+      description: 'carreras siendo finisher'
     },
     {
       icon: Users,
-      title: '+500',
-      description: 'Corredores acompañados'
+      title: 'Certificado',
+      description: 'Guía de montaña'
     },
     {
       icon: Heart,
@@ -53,14 +53,13 @@ const InstructorSection: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <Badge variant="primary" size="lg" className="mb-4">
-            Tu Instructor
+            Tu Guía
           </Badge>
           <h2 className="text-display-3 font-nike text-dark-950 mb-6">
             CONOCE A <span className="text-primary-500">ÓSCAR</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Más que un instructor, es tu compañero de aventura que te acompañará 
-            en cada paso hacia tu primer trail
+            Más que un guía, es tu compañero de aventura que estará contigo en cada paso hacia tu primer trail.
           </p>
         </div>
 
@@ -113,21 +112,22 @@ const InstructorSection: React.FC = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-3xl font-bold text-dark-950 mb-6 font-nike">
-                Tu Guía Hacia el Trail
+                Tu guía hacia el trail
               </h3>
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
                 <p>
-                  <strong>Óscar no es solo un instructor certificado</strong> con más de 15 años 
+                  <strong>Óscar no es solo un guía certificado</strong> con más de 15 años 
                   de experiencia en montaña. Es alguien que entiende perfectamente tus miedos 
-                  porque él también los tuvo.
+                  porque él también los tuvo. Como un experimentado corredor de asfalto que dio el salto a la montaña, su misión no es que corras más rápido, sino que disfrutes cada zancada y ganes la confianza para explorar la montaña por ti mismo.
                 </p>
                 <p>
-                  Comenzó como corredor de asfalto, igual que tú. Su misión es acompañarte 
-                  en esa transición de forma segura, divertida y sin presión.
+                  Como miembro del prestigioso club placentino Team Isla Sport, Óscar cuenta con un bagaje de más de 80 carreras finalizadas por todo el territorio nacional, abarcando desde cortas hasta ultras de larga distancia. Cada una de esas carreras es una historia de aprendizaje, de superación y de pasión que ahora pone a tu servicio.
                 </p>
                 <p>
-                  <em>&ldquo;Mi objetivo no es que corras más rápido, sino que disfrutes cada 
-                  paso y ganes la confianza para explorar la montaña por ti mismo.&rdquo;</em>
+                  Puedes consultar sus resultados en carreras emblemáticas de élite a nivel mundial, una muestra de la dedicación y el conocimiento que te transmitirá en cada sesión de entrenamiento: 
+                  <a href="https://utmb.world/es/runner/4241641.oscar.escribanojimenez" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline font-semibold">
+                    Consulta aquí sus mejores resultados
+                  </a>
                 </p>
               </div>
             </div>
@@ -139,11 +139,11 @@ const InstructorSection: React.FC = () => {
               </h4>
               <ul className="space-y-3">
                 {[
-                  'Técnica de carrera en senderos y desniveles',
-                  'Gestión del miedo y confianza en montaña',
-                  'Orientación y seguridad en trail',
-                  'Ritmo y estrategia para principiantes',
-                  'Mentalidad y disfrute del proceso'
+                  'Técnica de carrera: Aprende a subir de forma eficiente y a bajar con confianza, dominando las partes más difíciles y técnicas.',
+                  'Gestión del miedo: Convierte la incertidumbre en tu mayor motivación.',
+                  'Orientación y seguridad: Domina el material y las herramientas para no sentirte perdido jamás.',
+                  'Ritmo y estrategia: Descubre el ritmo que te permite disfrutar de la distancia sin agobios.',
+                  'Mentalidad y disfrute: Encuentra en el trail una forma de meditación activa que te conecta con la naturaleza y contigo mismo.'
                 ].map((specialty, index) => (
                   <li key={index} className="flex items-start">
                     <div className="h-2 w-2 bg-primary-500 rounded-full mt-2.5 mr-3 flex-shrink-0" />
@@ -216,7 +216,7 @@ const InstructorSection: React.FC = () => {
           <div className="inline-flex items-center justify-center space-x-4 bg-white rounded-full px-8 py-4 shadow-lg">
             <div className="w-3 h-3 bg-primary-500 rounded-full animate-pulse"></div>
             <p className="text-dark-950 font-nike font-semibold">
-              Con Óscar, tu primer trail será una experiencia inolvidable y segura
+              Con Óscar, tu primer trail será una experiencia memorable y segura.
             </p>
             <div className="w-3 h-3 bg-slate-800 rounded-full animate-pulse"></div>
           </div>

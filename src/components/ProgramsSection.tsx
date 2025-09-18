@@ -12,7 +12,7 @@ const programSchedule = [
     activities: [
       { time: '17:00 h', activity: 'Recepción y check-in', description: 'Café de bienvenida.' },
       { time: '18:00 h', activity: 'Presentación del camp', description: 'Introducción a la filosofía Desconecta EcoTrail, a la ruta y a la agenda del fin de semana.' },
-      { time: '19:30 h', activity: 'Taller: "Del asfalto al sendero"', description: 'Sesión de dudas y consejos prácticos para iniciarse en el trail: material, técnica y mentalidad.' },
+      { time: '19:30 h', activity: 'Taller: "Del asfalto a la montaña"', description: 'Sesión de dudas y consejos prácticos para iniciarse en el trail: material, técnica y mentalidad.' },
       { time: '21:00 h', activity: 'Cena comunitaria', description: 'Momento para conectar con la tribu.' },
       { time: '22:30 h', activity: 'Proyección & debate', description: 'Proyección de un documental inspirador.' }
     ]
@@ -21,7 +21,7 @@ const programSchedule = [
     day: 'SÁBADO',
     subtitle: 'Día de entrenamiento y acción',
     activities: [
-      { time: '08:00 h', activity: 'Desayuno del corredor', description: 'Un desayuno energético y consciente en la casa rural.' },
+      { time: '08:00 h', activity: 'Desayuno del corredor', description: '' },
       { time: '09:00 h', activity: 'Plogging: calentamiento con propósito', description: 'Salida para calentar, con una breve sesión de plogging en una zona cercana.' },
       { time: '09:30 h', activity: 'Ruta guiada', description: 'Recorrido de 15-20 km (adaptado a 2 niveles) por rutas emblemáticas de la zona, con paradas técnicas para realizar ejercicios de técnica.' },
       { time: '14:00 h', activity: 'Comida y recuperación', description: 'Comida picnic en un punto emblemático de la ruta.' },
